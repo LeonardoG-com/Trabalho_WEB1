@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E5E4E1; 
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #007B9F; 
+    padding: 20px;
+}
+
+.barra img {
+    width: 100px;
+    margin-left: 150px;
+}
+
+.barra-pesquisa {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
+
+.barra-pesquisa:focus {
+    border-color: #03001a;
+}
+
+.barra h2 {
+    color: white;
+    font-size: medium;
+}
+
+.publicidade{
+    justify-content:flex-start;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 125px;
+ }
+ 
+ .publicidade img {
+    max-width: 67%; 
+    height: auto; 
+}
+
+.lado-direito {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+
+}
+
+.lado-direito img {
+    max-width: 100%;
+    padding-left: 50px;
+    
+}
+
+.destaque {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;
+    gap: 20px; /* espaço entre as imagens */
+    margin-top: 20px;
+}
+
+.destaque img {
+    width: 210px;            /* largura padrão */
+    height: 250px;           /* altura padrão */
+    object-fit: contain;       /* faz a imagem preencher a caixa sem distorcer */
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+
+
+h3{
+    justify-content:flex-start;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 125px;
+}
