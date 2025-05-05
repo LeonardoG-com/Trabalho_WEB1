@@ -60,19 +60,39 @@ body {
 
 .destaque {
     display: flex;
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: center;
-    gap: 20px; /* espaço entre as imagens */
+    justify-content: center; /* Centraliza os produtos horizontalmente */
+    align-items: flex-start; /* Alinha os produtos no topo */
+    gap: 20px; /* Espaçamento entre os produtos */
     margin-top: 20px;
 }
 
-.destaque img {
-    width: 210px;            /* largura padrão */
-    height: 250px;           /* altura padrão */
-    object-fit: contain;       /* faz a imagem preencher a caixa sem distorcer */
+.produto {
+    display: flex;
+    flex-direction: column; /* Organiza imagem e texto verticalmente */
+    align-items: center; /* Centraliza o conteúdo dentro do produto */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f9f9f9; /* Fundo claro para destacar o produto */
+    padding: 10px;
     border-radius: 10px;
-    padding: 5px;
-    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    width: 220px; /* Largura fixa para cada produto */
+    height: 350px; /* Altura fixa para todas as caixas */
+    box-sizing: border-box; /* Inclui padding na altura e largura */
+}
+
+.produto img {
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px;
+    max-height: 150px; /* Limita a altura máxima da imagem */
+}
+
+.produto p, .produto span {
+    margin: 5px 0; /* Espaçamento entre os textos */
+}
+
+.produto span {
+    font-size: 14px;
+    color: #007B9F; /* Cor do preço */
 }
 
 
