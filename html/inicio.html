@@ -31,53 +31,156 @@
                 </div>
     
                 <!-- Lado direito: ícone e texto -->
-                <div class="sessao-direita">
-                    <img src="../midia/iconS.png" class="icon-sessao" alt="Ícone de Sessão">
-                    <p class="texto-sessao">Iniciar Sessão</p>
-                </div>
+                <div class="icon-wrapper">
+                    <div class="icon-item">
+                        <img src="../midia/iconS.png" class="icon-sessao" alt="Ícone de Sessão">
+                        <p class="texto-sessao">Iniciar Sessão</p>
+                    </div>
+                    <div class="icon-item">
+                        <img src="../midia/carrinho.png" class="icon-sessao" alt="Ícone Carrinho">
+                        <p class="texto-sessao">Carrinho</p>
+                    </div>
+                </div>                
             </div>
         </div>
     </header>
     
-    <div class="container publicidade">
+    <div class="container mt-4">
         <div class="row">
-            <div class="col-auto">
-                <img src="..\midia\publicidade.jpg" alt="Publicidade">
+            <!-- Imagem grande de publicidade à esquerda -->
+            <div class="col-md-9 mb-3 mb-md-0">
+                <img src="../midia/publicidade.jpg" alt="Publicidade" class="img-fluid w-100 rounded shadow">
             </div>
-            <div class="col-auto lado-direito">
-                <img src="..\midia\trustpilot.png" alt="Trustpilot">
-                <img src="..\midia\vender.png" alt="Como Vender">
+    
+            <!-- Coluna direita com duas imagens menores empilhadas -->
+            <div class="col-md-3 d-flex flex-column justify-content-between">
+                <img src="../midia/trustpilot.png" alt="Trustpilot" class="img-fluid mb-3 rounded small-ad">
+                <img src="../midia/vender.png" alt="Como Vender" class="img-fluid rounded small-ad">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h3>Produtos em destaque</h3>
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\farcry3.webp" alt="Produto em destaque" class="produto-img img-fluid">
+                <p>Far Cry 3</p>
+                <span>Preço: 39.99€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\i9.webp" alt="Produto em destaque 2" class="produto-img img-fluid">
+                <p>Intel Core i9 - Processador</p>
+                <span>Preço: 529.90€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\iphone16.png" alt="iPhone 16 Pro Max" class="produto-img img-fluid">
+                <p>iPhone 16 Pro Max APPLE (6.9'' - 256 GB - Titânio Natural)</p>
+                <span>Preço: €1.324,00</span>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <span>(28)</span>
+                </div>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\jbl.png" alt="Produto em destaque 4" class="produto-img img-fluid">
+                <p>Coluna Bluetooth JBL Flip 6</p>
+                <span>Preço: 79.99€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\rtx.png" alt="Produto em destaque 5" class="produto-img img-fluid">
+                <p>MSI GeForce RTX 3090 Ventus 3X 24G OC</p>
+                <span>Preço: 1199.99€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\portatil.jpg" alt="Produto em destaque 5" class="produto-img img-fluid">
+                <p>Portátil Lenovo IdeaPad Slim 3 Chromebook</p>
+                <span>Preço: 299.99€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\monitor.jpg" alt="Produto em destaque 5" class="produto-img img-fluid">
+                <p>MONITOR LED GAMING ACER KG241YM3BMIIPX</p>
+                <span>Preço: 109.99€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\ps5.webp" alt="Produto em destaque 5" class="produto-img img-fluid">
+                <p>Sony Consola PS5</p>
+                <span>Preço: 379.99€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\tv.jpg" alt="Produto em destaque 5" class="produto-img img-fluid">
+                <p>Smart TV Xiaomi A 32" LED HD Ready</p>
+                <span>Preço: 149.99€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\rato.webp" alt="Produto em destaque 5" class="produto-img img-fluid">
+                <p>Rato Razer Deathadder Essential</p>
+                <span>Preço: 13.99€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
             </div>
         </div>
     </div>
 
     <div class="container">
-        <h3>Produtos em destaque</h3>
-        <div class="row destaque">
-            <div class="col-auto produto">
-                <img src="..\midia\farcry3.webp" alt="Produto em destaque">
-                <p>Far Cry 3</p>
-                <span>Preço: 39.99€</span>
+        <h3>Jogos</h3>
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\fifa24.jpg" alt="Produto em destaque" class="produto-img img-fluid">
+                <p>EA Sports FC 25 - PS4</p>
+                <span>Preço: 46.99€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
             </div>
-            <div class="col-auto produto">
-                <img src="..\midia\i9.webp" alt="Produto em destaque 2">
-                <p>Intel Core i9 - Processador</p>
-                <span>Preço: 529.90€</span>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\gow.jpg" alt="Produto em destaque 2" class="produto-img img-fluid">
+                <p>God of War Ragnarök - Edição Standard - PS4</p>
+                <span>Preço: 69.99€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
             </div>
-            <div class="col-auto produto">
-                <img src="..\midia\iphone16.png" alt="Produto em destaque 3">
-                <p>iPhone 16 - Smartphone</p>
-                <span>Preço: 1099.99€</span>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\ac.jpg" alt="iPhone 16 Pro Max" class="produto-img img-fluid">
+                <p>Assassin's Creed: Shadows - PS5</p>
+                <span>Preço: 69.99€</span>
+                <div class="rating">
+                    <span>★★★★☆</span>
+                    <span>(28)</span>
+                </div>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
             </div>
-            <div class="col-auto produto">
-                <img src="..\midia\jbl.png" alt="Produto em destaque 4">
-                <p>Coluna Bluetooth JBL Flip 6</p>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\elden.jpg" alt="Produto em destaque 4" class="produto-img img-fluid">
+                <p>Elden Ring: Shadow Of The Erdtree Goty Edition - PS5</p>
                 <span>Preço: 79.99€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
             </div>
-            <div class="col-auto produto">
-                <img src="..\midia\rtx.png" alt="Produto em destaque 5">
-                <p>MSI GeForce RTX 3090 Ventus 3X 24G OC</p>
-                <span>Preço: 1199.99€</span>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="..\midia\MK.jpg" alt="Produto em destaque 5" class="produto-img img-fluid">
+                <p>Mortal Kombat 1 - PS5</p>
+                <span>Preço: 39.99€</span>
+                <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
+                
             </div>
         </div>
     </div>

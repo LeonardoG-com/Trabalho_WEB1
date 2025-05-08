@@ -15,10 +15,15 @@ body {
     height: auto; 
 }
 
+.row{
+    justify-content: center;
+}
+
+
+
 .lado-direito {
     display: flex;
     flex-direction: column;
-    gap: 40px; 
 }
 
 .lado-direito img {
@@ -38,21 +43,23 @@ body {
 .produto {
     display: flex;
     flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
-    background-color: #f9f9f9; 
+    align-items: flex-start; /* Alinha ao início */
+    text-align: left; /* Alinha ao início */
+    background-color: #ffffff; 
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     width: 220px; 
-    height: 350px;
+    height: 400px; /* Aumenta a altura da caixa */
     box-sizing: border-box;
+    margin: 15px; /* Adiciona espaço entre os produtos */
 }
 
 .produto img {
     height: auto; 
     border-radius: 5px;
     max-height: 150px; 
+    align-self: center; /* Centraliza a imagem */
 }
 
 .produto p,
@@ -63,6 +70,37 @@ body {
 .produto span {
     font-size: 14px;
     color: #007B9F; 
+}
+
+.produto-img {
+    max-height: 150px;
+    border-radius: 10px;
+    box-shadow: none; /* Remove a caixa atrás da imagem */
+}
+
+.produto-nome {
+    font-weight: bold;
+    color: #333;
+}
+
+.produto-preco {
+    font-size: 16px;
+    color: #007B9F;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating span:first-child {
+    color: #FFD700; /* Cor das estrelas */
+}
+
+.adicionar-btn,
+.favorito-btn {
+    margin-top: auto; /* Empurra os botões para o final do contêiner */
+    align-self: center; /* Centraliza os botões */
 }
 
 h3 {
@@ -80,3 +118,4 @@ footer {
     padding: 20px; 
     margin-top: 30px; 
 }
+
