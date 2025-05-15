@@ -1,0 +1,18 @@
+.img-bg-white {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    display: inline-block;
+}
+
+/* Título do produto */
+h1 {
+    font-size: 3rem; /* Tamanho grande */
+}
+
+/* Descrição e parágrafos */
+.jogo p,
+.jogo li {
+    font-size: 19px; /* Tamanho médio-grande */
+}
+
