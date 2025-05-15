@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E5E4E1; 
+}
+
+.row{
+    justify-content: center;
+}
+
+
+.produto {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; /* Alinha ao início */
+    text-align: left; /* Alinha ao início */
+    background-color: #ffffff; 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 220px; 
+/* height: 400px;  Aumenta a altura da caixa */
+    box-sizing: border-box;
+    margin: 15px; /* Adiciona espaço entre os produtos */
+}
+
+.produto img {
+    height: auto; 
+    border-radius: 5px;
+    max-height: 150px; 
+    align-self: center; /* Centraliza a imagem */
+}
+
+.produto p,
+.produto span {
+    margin: 5px; 
+}
+
+.produto span {
+    font-size: 14px;
+    color: #007B9F; 
+}
+
+.produto-img {
+    max-height: 150px;
+    border-radius: 10px;
+    box-shadow: none; /* Remove a caixa atrás da imagem */
+}
+
+.produto-nome {
+    font-weight: bold;
+    color: #333;
+}
+
+.produto-preco {
+    font-size: 16px;
+    color: #007B9F;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating span:first-child {
+    color: #FFD700; /* Cor das estrelas */
+}
+
+.adicionar-btn,
+.favorito-btn {
+    margin-top: auto; /* Empurra os botões para o final do contêiner */
+    align-self: center; /* Centraliza os botões */
+}
+
+h3 {
+    justify-content: flex-start; /* Alinha ao início */
+    display: flex;
+    margin-top: 30px;
+}
