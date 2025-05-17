@@ -1,0 +1,12 @@
+.faq-caixa {
+    background: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    padding: 1.5rem !important;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.faq-caixa a{
+    color: #007B9F;
+}

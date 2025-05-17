@@ -1,0 +1,9 @@
+.sobre-nos-box {
+    background-color: #fff;    /* bg-white */
+    border-radius: 0.25rem;    /* rounded */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); /* shadow */
+}
+
+.sobre-nos-box a{
+    color: #007B9F;
+}

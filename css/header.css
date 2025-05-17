@@ -9,6 +9,30 @@ body {
     padding: 20px;
 }
 
+.icon-item {
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+.barra-centro {
+    min-width: 300px;
+}
+.texto-barra h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+.icon-wrapper {
+    gap: 10px;
+}
+.icon-item {
+    min-width: 80px;
+}
+
 .container-barra {
     display: flex;
     align-items: center;
