@@ -1,12 +1,19 @@
-.faq-caixa {
+.faq-pergunta {
     background: #fff;
-    border-radius: 0.25rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    padding: 1.5rem !important;
-    margin-top: 3rem !important;
-    margin-bottom: 3rem !important;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 18px 24px;
+    margin-bottom: 18px;
 }
 
-.faq-caixa a{
-    color: #007B9F;
+.faq-pergunta h4 {
+    color: #007b9f;
+    margin-bottom: 8px;
+    font-size: 1.15rem;
+}
+
+.faq-pergunta p {
+    margin: 0;
+    color: #333;
+    font-size: 1rem;
 }

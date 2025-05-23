@@ -42,24 +42,26 @@ body {
 
 .produto {
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start; /* Alinha ao início */
-    text-align: left; /* Alinha ao início */
-    background-color: #ffffff; 
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo no card */
+    text-align: center;  /* Centraliza o texto */
+    background-color: #ffffff;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    width: 220px; 
-    height: 400px; /* Aumenta a altura da caixa */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    height: 400px;
     box-sizing: border-box;
-    margin: 15px; /* Adiciona espaço entre os produtos */
+    margin: 15px;
 }
 
-.produto img {
-    height: auto; 
-    border-radius: 5px;
-    max-height: 150px; 
-    align-self: center; /* Centraliza a imagem */
+.produto-img {
+    max-height: 150px;
+    border-radius: 10px;
+    box-shadow: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .produto p,
@@ -70,6 +72,26 @@ body {
 .produto span {
     font-size: 14px;
     color: #007B9F; 
+}
+
+.adicionar-btn {
+    background: linear-gradient(90deg, #007B9F 60%, #00b4d8 100%);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 6px 16px;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.adicionar-btn:hover,
+.adicionar-btn:focus {
+    background: linear-gradient(90deg, #00b4d8 60%, #007B9F 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 
 .produto-img {

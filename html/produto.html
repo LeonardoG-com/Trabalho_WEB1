@@ -8,183 +8,144 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/categoria.css">
     <link rel="stylesheet" href="../css/produto.css">
-    <link rel="shortcut icon" type="imagex/png" href="../midia/logo2.png">
+    <link rel="stylesheet" href="../css/pag_princ.css">
 </head>
 <body>
-   <!-- Substitua todo o <header> ... </header> pelo código abaixo -->
-<header class="barra">
-    <div class="container d-flex flex-wrap align-items-center justify-content-between">
-        <div class="col-12 col-md-auto text-md-start text-center mb-2 mb-md-0">
-            <img src="../midia/logo2.png" alt="Logo" class="logo logo-fixo">
-        </div>
-        <!-- Centro -->
-        <div class="col text-center">
-            <input type="search" class="barra-pesquisa" placeholder="Pesquisar...">
-            <div class="texto-barra">
-                <h2>Página Inicial</h2>
-                <h2>Últimos Productos</h2>
-                <h2>Smartphones</h2>
-                <h2>Portáteis</h2>
-                <h2>Jogos</h2>
-            </div>
-        </div>
-        <!-- Lado direito: ícone e texto -->
-        <div class="icon-wrapper">
-            <div class="icon-item">
-                <img src="../midia/iconS.png" class="icon-sessao" alt="Ícone de Sessão">
-                <p class="texto-sessao">Iniciar Sessão</p>
-            </div>
-            <div class="icon-item">
-                <img src="../midia/carrinho.png" class="icon-sessao" alt="Ícone Carrinho">
-                <p class="texto-sessao">Carrinho</p>
+<header>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-6">
+        <img src="../midia/logo2.png" alt="Logo do MeuSite" class="logo" style="max-height:90px;">      
+      </div>
+      <div class="col-6 ">
+        <nav>
+          <a href="">Início</a>
+          <a href="">Sobre</a>
+          <a href="">Jogos</a>
+          <a href="">Contactos</a>
+          <button class="btn-login" >Login</button>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+    <main>
+    <div class="container" style="margin-top:40px; margin-bottom:40px;">
+        <div class="produto-main">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="../midia/farcry3.webp" alt="Far Cry 3" style="width:100%; max-width:350px; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.10); background:#f8f9fa;">
+                </div>
+                <div class="col-md-7">
+                    <h1>Far Cry 3</h1>
+                    <p><strong>Preço:</strong> 39.99€</p>
+                    <p>
+                        Far Cry 3 é um jogo de ação e aventura em mundo aberto, aclamado pela crítica, onde assumes o papel de Jason Brody numa ilha tropical repleta de perigos, inimigos e escolhas morais. Explora, sobrevive e enfrenta o carismático vilão Vaas Montenegro.
+                    </p>
+                    <h2>Detalhes do Produto</h2>
+                    <ul>
+                        <li><strong>Plataforma:</strong> PC, PS3, Xbox 360</li>
+                        <li><strong>Género:</strong> Ação / Aventura</li>
+                        <li><strong>Classificação:</strong> M/18</li>
+                        <li><strong>Estado:</strong> Usado (como novo)</li>
+                        <li><strong>Inclui:</strong> Caixa original e manual</li>
+                        <li><strong>Garantia:</strong> 3 anos</li>
+                        <li><strong>Entrega:</strong> Rápida (1-3 dias úteis)</li>
+                    </ul>
+                    <button class="adicionar-btn">ADICIONAR AO CARRINHO</button>
+                </div>
             </div>
         </div>
     </div>
-</header>
 
-    <main>
-        <div class="container produto-main mt-5 mb-5">
-            <div class="row justify-content-start align-items-start">
-                <!-- Imagem do produto -->
-                <div class="col-12 col-md-5 mb-4 mb-md-0 produto-img-area">
-                    <div class="img-bg-white destaque-produto">
-                        <img src="../midia/farcry3.webp" alt="Far Cry 3" class="img-produto">
-                    </div>
-                </div>
-                <!-- Informações do produto -->
-                <div class="col-12 col-md-7 produto-info">
-                    <h1>Far Cry 3</h1>
-                    <p class="text-muted">Jogo para: Xbox 360</p>
-                    <div class="mb-3">
-                        <span class="preco-produto">19,99€</span>
-                        <span class="stock-produto">Em stock</span>
-                    </div>
-                    <p>
-                        Far Cry 3 é um jogo de ação e aventura em mundo aberto, onde o jogador explora uma ilha tropical cheia de perigos, inimigos e mistérios. 
-                        Viva uma experiência intensa de sobrevivência, combate e exploração.
-                    </p>
-                    <ul>
-                        <li>Género: Ação/Aventura</li>
-                        <li>Classificação: 18+</li>
-                        <li>Idioma: Português, Inglês</li>
-                        <li>Entrega rápida</li>
-                    </ul>
-                    <button class="btn btn-danger btn-lg mt-3">ADICIONAR AO CARRINHO</button>
-                </div>
+     <div class="container">
+        <h3>Produtos em destaque</h3>
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="../midia/fifa24.jpg" alt="fifa24" class="produto-img">
+                <p>EA Sports FC 25 - PS4</p>
+                <span>Preço: 46.99€</span>
+                <button class="adicionar-btn">ADICIONAR</button>
             </div>
-        </div>
-        <!-- Detalhes do produto -->
-        <div class="container detalhes-produto mt-4 mb-5">
-            <div class="row">
-                <div class="col-12">
-                    <h3>Detalhes do Produto</h3>
-                    <ul>
-                        <li><strong>Editora:</strong> Ubisoft</li>
-                        <li><strong>Data de Lançamento:</strong> 29 de novembro de 2012</li>
-                        <li><strong>Plataforma:</strong> Xbox 360, PS3, PC</li>
-                        <li><strong>Modo de Jogo:</strong> Singleplayer, Multiplayer</li>
-                        <li><strong>Classificação:</strong> 18+</li>
-                        <li><strong>Inclui:</strong> Manual, Mapa da Ilha, DLC exclusivo</li>
-                    </ul>
-                    <p>
-                        Far Cry 3 é um dos jogos mais aclamados da franquia, trazendo uma experiência intensa de sobrevivência e exploração em um mundo aberto vibrante e perigoso. 
-                        Descubra segredos, enfrente inimigos e faça escolhas que impactam o destino da ilha.
-                    </p>
-                </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                 <img src="../midia/gow.jpg" alt="God of War Ragnarök" class="produto-img">
+                <p>God of War Ragnarök - Edição Standard - PS4</p>
+                <span>Preço: 69.99€</span>
+                <button class="adicionar-btn">ADICIONAR</button>
             </div>
-        </div>
-        <div class="container">
-            <h3>Jogos</h3>
-            <div class="row">
-                <div class="col col-lg-2 col-md-4 col-sm-6 col-12 produto">
-                    <img src="../midia/fifa24.jpg" alt="Produto em destaque" class="produto-img img-fluid">
-                    <p>EA Sports FC 25 - PS4</p>
-                    <span>Preço: 46.99€</span>
-                    <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
-                </div>
-                <div class="col col-lg-2 col-md-4 col-sm-6 col-12 produto">
-                    <img src="../midia/gow.jpg" alt="Produto em destaque 2" class="produto-img img-fluid">
-                    <p>God of War Ragnarök - Edição Standard - PS4</p>
-                    <span>Preço: 69.99€</span>
-                    <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
-                </div>
-                <div class="col col-lg-2 col-md-4 col-sm-6 col-12 produto">
-                    <img src="../midia/ac.jpg" alt="Assassin's Creed: Shadows - PS5" class="produto-img img-fluid">
-                    <p>Assassin's Creed: Shadows - PS5</p>
-                    <span>Preço: 69.99€</span>
-                    <div class="rating">
-                        <span>★★★★☆</span>
-                        <span>(28)</span>
-                    </div>
-                    <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
-                </div>
-                <div class="col col-lg-2 col-md-4 col-sm-6 col-12 produto">
-                    <img src="../midia/elden.jpg" alt="Produto em destaque 4" class="produto-img img-fluid">
-                    <p>Elden Ring: Shadow Of The Erdtree Goty Edition - PS5</p>
-                    <span>Preço: 79.99€</span>
-                    <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
-                </div>
-                <div class="col col-lg-2 col-md-4 col-sm-6 col-12 produto">
-                    <img src="../midia/MK.jpg" alt="Produto em destaque 5" class="produto-img img-fluid">
-                    <p>Mortal Kombat 1 - PS5</p>
-                    <span>Preço: 39.99€</span>
-                    <button class="btn btn-danger adicionar-btn">ADICIONAR</button>
-                </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="../midia/ac.jpg" alt="Assassin's Creed: Shadows" class="produto-img">
+                <p>Assassin's Creed: Shadows - PS5</p>
+                <span>Preço: 69.99€</span>
+                <button class="adicionar-btn">ADICIONAR</button>
             </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                 <img src="../midia/elden.jpg" alt="Elden Ring" class="produto-img">
+                <p>Elden Ring: Shadow Of The Erdtree Goty Edition - PS5</p>
+                <span>Preço: 79.99€</span>
+                <button class="adicionar-btn">ADICIONAR</button>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 produto">
+                <img src="../midia/MK.jpg" alt="Mortal Kombat 1" class="produto-img">
+                <p>Mortal Kombat 1 - PS5</p>
+                <span>Preço: 39.99€</span>
+                <button class="adicionar-btn">ADICIONAR</button>
+            </div>        
         </div>
-    </main>
+    </div>
+</main>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>Sobre</h2>
-                    <p>Sobre nos</p>
-                    <p>Vender um item</p>
-                    <p>Carreiras</p>
-                    <p>imprensa</p>
-                </div>
-                <div class="col">
-                    <h2>Suporte</h2>
-                    <p>Encontrar uma loja</p>
-                    <p>Contate-nos</p>
-                    <p>Perguntas frequentes</p>
-                </div>
-                <div class="col">
-                    <h2>Redes Sociais</h2>
-                    <ul class="list-unstyled d-flex">
-                        <li class="mr-3">
-                            <a href="https://facebook.com" target="_blank">
-                                <img src="../midia/facebook.png" alt="Facebook">
-                            </a>
-                        </li>
-                        <li class="mr-3">
-                            <a href="https://instagram.com" target="_blank">
-                                <img src="../midia/instagram.png" alt="Instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com" target="_blank">
-                                <img src="../midia/twitter.png" alt="Twitter">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h2>Links Úteis</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Termos e Condições</a></li>
-                        <li><a href="#">Política de Cookies</a></li>
-                        <li><a href="#">Definições de cookies</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col text-center">
-                    <p>&copy; 2025 Techno Waves. Todos os direitos reservados.</p>
-                </div>
-            </div>
+    <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Sobre</h2>
+        <p>Sobre nós</p>
+        <p>Vender um item</p>
+        <p>Carreiras</p>
+        <p>Imprensa</p>
+      </div>
+      <div class="col">
+        <h2>Suporte</h2>
+        <p>Encontrar uma loja</p>
+        <p>Contacte-nos</p>
+        <p>Perguntas frequentes</p>
+      </div>
+      <div class="col">
+        <h2>Redes Sociais</h2>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank">
+            <img src="../midia/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="../midia/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="../midia/twitter.png" alt="Twitter">
+          </a>
         </div>
-    </footer>
+      </div>
+      <div class="col">
+        <h2>Links Úteis</h2>
+        <ul>
+          <li><a href="#">Termos e Condições</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+          <li><a href="#">Definições de cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="text-center">&copy; 2025 Techno Waves. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

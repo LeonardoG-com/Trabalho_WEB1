@@ -1,10 +1,95 @@
-.produto-comp ul {
-    display: flex;
-    text-align: left;
-    display: inline-block;
-    margin: 0 auto;
-    padding-left: 0;
+html, body {
+    margin: 0;
+    padding: 0;
 }
+
+
+/* Container principal da comparação */
+.comparacao-container {
+    max-width: 1140px;
+    margin: 48px auto;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
+}
+
+/* Título principal */
+.titulo-comparacao {
+    text-align: center;
+    color: #007B9F;
+    font-size: 2rem;
+    margin-bottom: 32px;
+    font-weight: bold;
+}
+
+/* Produto individual */
 .produto-comp {
     text-align: center;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 24px 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
+
+.img-produto-comp {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.lista-produto-comp {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+    display: inline-block;
+}
+
+/* Tabela de comparação */
+.tabela-comp {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.tabela-comp th, .tabela-comp td {
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.tabela-comp th {
+    background: #007B9F;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tabela-comp tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.titulo-caracteristicas {
+    text-align: center;
+    color: #007B9F;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+
+
+
+

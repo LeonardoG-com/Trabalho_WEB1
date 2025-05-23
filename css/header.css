@@ -1,173 +1,142 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #E5E4E1; 
+/* Barra superior */
+.top-bar {
+  background-color: #343a40;
+  color: #ccc;
+  font-size: 0.85rem;
+  padding: 5px 0;
+  text-align: center;
 }
 
-.barra {
-    background-color: #007B9F;
-    padding: 20px;
-}
-
-.icon-item {
-    text-align: center;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-}
-.barra-centro {
-    min-width: 300px;
-}
-.texto-barra h2 {
-    font-size: 1.1rem;
-    margin-bottom: 0;
-}
-.icon-wrapper {
-    gap: 10px;
-}
-.icon-item {
-    min-width: 80px;
-}
-
-.container-barra {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 20px;
-}
-
-.sessao-direita {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.sessao-direita {
-    display: flex;
-    flex-direction: column; /* Ícones em cima, texto embaixo */
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-}
-
-.sessao-direita img {
-    margin: 0 5px;
-}
-
-.small-ad {
-    height: 48%;
-    object-fit: cover;
-}
-
-
-
-.icon-wrapper {
-    display: flex;
-    gap: 20px;
-}
-
-.icon-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.icon-sessao {
-    width: 30px;
-    height: auto;
-}
-
-.texto-sessao {
-    margin-top: 5px;
-    font-size: 14px;
-    color: white;
+/* Header principal */
+header {
+  background-color: #007ba0;
+  color: white;
+  padding: 15px 0;
+  font-family: Arial, sans-serif;
 }
 
 
 .logo {
-    width: 100px;
-    align-self: center; /* Alinha o logo ao centro da barra */
+  font-weight: bold;
+  font-size: 1.8rem;
+  user-select: none;
+  max-height: 90px;    /* aumenta a altura máxima */
+  max-width: 180px;    /* opcional: aumenta a largura máxima */
 }
 
-.conteudo-central {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    flex-grow: 1;
+/* Navegação */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
-.barra-pesquisa {
-    width: 600px;
-    max-width: 100%;
-    padding: 7px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    margin: 0 auto; /* Centraliza a barra de pesquisa */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-.barra-pesquisa::placeholder {
-    color: #ccc;
-    font-size: 16px;
-    font-style: italic;
+nav a:hover {
+  background-color: #ffffff;
+  color: #007ba0;
+  text-decoration: none;
 }
 
-.barra-pesquisa:focus {
-    border-color: #03001a;
+/* Botão Login */
+.btn-login {
+  background-color: white;
+  color: #007ba0;
+  padding: 6px 15px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.texto-barra {
-    display: flex;
-    flex-wrap: wrap;
+.btn-login:hover {
+  background-color: #dbdbdb;
+  color: rgb(0, 0, 0);
+}
+
+/* Responsividade simples */
+@media (max-width: 768px) {
+  nav {
     justify-content: center;
-    gap: 40px;
-    margin-top: 20px; /* Adiciona margem superior */
-}
+    gap: 15px;
+  }
 
-.texto-barra h2 {
-    color: white;
-    font-size: 16px;
-    margin: 0;
-    text-align: center;
-    padding-top: 10px;
+  .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
 }
-.logo-fixo {
-
-    width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    margin: 10px; /* Espaçamento opcional */
-}
-
-footer {
-    background-color: #007B9F;
-    color: white;
-    padding: 40px 20px;
-    margin-top: 30px;
+/* Logo - agora imagem */
+.logo {
+  max-height: 50px; /* altura máxima da logo no header */
+  user-select: none;
 }
 
 
-
-footer img {
-    width: 30px; 
-    height: 30px;
+    .footer {
+  background-color: #007a9f;
+  color: #fff;
+  padding: 40px 0 20px 0;
+  font-size: 14px;
 }
 
-a {
-    color: #ffffff; /* Escolha a cor desejada */
-    text-decoration: none; /* Remove o sublinhado */
+.footer h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
-/* Mudar a cor ao passar o mouse */
-a:hover {
-    color: #ffffff; /* Cor ao passar o mouse */
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+.footer p,
+.footer ul,
+.footer ul li,
+.footer ul li a {
+  color: #fff;
+}
+
+.footer .social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.footer .social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.footer ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.footer ul li a:hover {
+  color: #b2ebf2;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 30px;
 }

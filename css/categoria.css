@@ -1,79 +1,107 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #E5E4E1; 
+.categoria-container {
+    max-width: 1140px;
+    margin: 48px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
-
-.row{
-    justify-content: center;
-}
-
 
 .produto {
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start; /* Alinha ao início */
-    text-align: left; /* Alinha ao início */
-    background-color: #ffffff; 
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    width: 220px; 
-/* height: 400px;  Aumenta a altura da caixa */
-    box-sizing: border-box;
-    margin: 15px; /* Adiciona espaço entre os produtos */
-}
-
-.produto img {
-    height: auto; 
-    border-radius: 5px;
-    max-height: 150px; 
-    align-self: center; /* Centraliza a imagem */
-}
-
-.produto p,
-.produto span {
-    margin: 5px; 
-}
-
-.produto span {
-    font-size: 14px;
-    color: #007B9F; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 260px; /* limite de altura */
 }
 
 .produto-img {
-    max-height: 150px;
-    border-radius: 10px;
-    box-shadow: none; /* Remove a caixa atrás da imagem */
+    width: 100%;
+    max-width: 100px; /* reduzido */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 6px; /* reduzido */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: block;
+}
+.container-jogos .produto {
+    max-width: 260px;
+    padding: 24px 12px;
+    font-size: 1.15rem;
 }
 
-.produto-nome {
-    font-weight: bold;
-    color: #333;
+.container-jogos .produto-img {
+    max-width: 220px;
+    height: 180px;
+    margin-bottom: 16px;
 }
 
-.produto-preco {
-    font-size: 16px;
+.container-jogos .adicionar-btn {
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    margin-top: 14px;
+}
+.produto p,
+.produto span {
+    font-size: 0.85rem; /* reduzido */
+    margin: 4px 0; /* ajustado */
+}
+
+.titulo-categoria {
+    text-align: center;
     color: #007B9F;
+    font-size: 2rem;
+    margin-bottom: 36px;
+    font-weight: bold;
 }
 
-.rating {
-    display: flex;
-    align-items: center;
+.jogo-card {
+    text-align: center;
+    margin-bottom: 32px;
 }
 
-.rating span:first-child {
-    color: #FFD700; /* Cor das estrelas */
+.jogo-img {
+    width: 100%;
+    max-width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.adicionar-btn,
-.favorito-btn {
-    margin-top: auto; /* Empurra os botões para o final do contêiner */
-    align-self: center; /* Centraliza os botões */
+@media (max-width: 768px) {
+    .categoria-container {
+        padding: 8px;
+    }
+    .jogo-img {
+        max-width: 100%;
+        height: 90px;
+    }
 }
 
-h3 {
-    justify-content: flex-start; /* Alinha ao início */
-    display: flex;
-    margin-top: 30px;
+/* Botão ADICIONAR estilizado - menor */
+.adicionar-btn {
+    background: linear-gradient(90deg, #007B9F 60%, #00b4d8 100%);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 6px 16px; /* reduzido */
+    margin-top: 6px; /* reduzido */
+    font-size: 0.85rem; /* reduzido */
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.adicionar-btn:hover,
+.adicionar-btn:focus {
+    background: linear-gradient(90deg, #00b4d8 60%, #007B9F 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
