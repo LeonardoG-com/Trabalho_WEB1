@@ -99,7 +99,7 @@ nav a:hover {
   color: #fff;
 }
 
-.footer p,
+.footer p a,
 .footer ul,
 .footer ul li,
 .footer ul li a {
@@ -121,22 +121,17 @@ nav a:hover {
   margin-top: 0;
 }
 
-.footer ul li {
+.footer ul li
+ {
   list-style: none;
   margin-bottom: 5px;
 }
 
-.footer ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  transition: color 0.2s;
-}
 
-.footer ul li a:hover {
-  color: #b2ebf2;
-}
+
 
 .text-center {
   text-align: center;
   margin-top: 30px;
 }
+
