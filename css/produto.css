@@ -5,11 +5,11 @@
     align-items: flex-start;
     gap: 40px;
     margin: 40px auto;
-    max-width: 1200px;    /* Aumenta a largura máxima */
+    max-width: 1200px;   
     background: #fff;
     border-radius: 14px;
     box-shadow: 0 4px 18px rgba(0,0,0,0.10);
-    padding: 48px 48px;   /* Aumenta o padding */
+    padding: 48px 48px;   
 }
 .produto-img-area {
     display: flex;
@@ -79,7 +79,7 @@
     box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 
-/* Detalhes do produto extra */
+
 .detalhes-produto {
     background: #fff;
     border-radius: 10px;
@@ -103,7 +103,7 @@
     display: block;
     margin: 24px auto 0 auto;
 }
-/* Responsivo */
+
 @media (max-width: 830px) {
     .produto-main {
         flex-direction: column;
