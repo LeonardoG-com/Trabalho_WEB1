@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\css\erro404.css">
-    <link rel="stylesheet" href="..\css\header.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="shortcut icon" type="imagex/png" href="..\midia\logo2.png">
     <title>Erro: 404</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/erro404.css">
 </head>
 <body>
     <header>
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-6">
-        <img src="../midia/logo2.png" alt="Logo do MeuSite" class="logo" style="max-height:90px;">      
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <img src="../midia/logo2.png" alt="Logo do MeuSite" class="logo" style="max-height:90px;">
+          </div>
+          <div class="col-6">
+            <nav>
+              <a href="index.html">Início</a>
+              <a href="sobre.html">Sobre</a>
+              <a href="jogos.html">Jogos</a>
+              <a href="contatos.html">Contactos</a>
+              <button class="btn-login">Login</button>
+            </nav>
+          </div>
+        </div>
       </div>
-      <div class="col-6 ">
-        <nav>
-          <a href="">Início</a>
-          <a href="">Sobre</a>
-          <a href="">Jogos</a>
-          <a href="">Contactos</a>
-          <button class="btn-login" >Login</button>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
+    </header>
 
-    <div class="erro">
-        <img src="..\midia\404.png">
-        <p><span style="color:red;  font-weight: bold;">404.</span> Ocorreu um erro. <span style="color:red;  font-weight: bold; ">O URL solicitado não foi encontrado neste servidor.</span><br>É tudo que sabemos.</p>
-    </div>
+     <main>
+      <div class="erro-404-container">
+        <img src="../midia/404.png" alt="Erro 404" class="erro-img">
+        <h1>404</h1>
+        <p>A página que procura não foi encontrada.</p>
+        <a href="index.html" class="btn-voltar">Voltar ao início</a>
+      </div>
+    </main>
 
     <footer class="footer">
   <div class="container">
@@ -80,6 +83,5 @@
     </div>
   </div>
 </footer>
-      
 </body>
 </html>

@@ -1,50 +1,75 @@
-body  {
-    margin: 0;
-    padding: 0;
-    background-color: #fcfcfc; 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.erro-404-container {
+  text-align: center;
+  padding: 40px 16px;
+}
+
+.erro-img {
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #2563eb;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.btn-voltar {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+
+.btn-voltar:hover {
+  background: #38bdf8;
+  color: #23272f;
 }
 
 
-.erro {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 20px; 
-    text-align: left; 
-    padding: 20px;
+
+
+@media (max-width: 600px) {
+  .erro-img {
+    max-width: 140px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .erro-404-container {
+    padding: 24px 4px;
+  }
 }
-
-.erro img {
-    max-width: 50%; 
-    height: auto; 
-}
-
-icon-wrapper .p {
-    font-size: large; 
-    max-width: 50%; 
-   
-}
-
-
-
-    
-
-    .erro {
-        flex-direction: column; 
-        align-items: center; 
-        gap: 10px; 
-    }
-
-    .erro img {
-        max-width: 70%; 
-        height: auto; 
-    }
-
-    .erro p {
-        font-size: large;
-        max-width: 50%;
-        text-align: center;
-    }
-    
-
-
